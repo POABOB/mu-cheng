@@ -1,0 +1,228 @@
+/* visiting-environment */
+#visiting-environment{
+    position: relative;
+}
+#visiting-environment:before{
+    content: url('../assets/images/common/icon_leaves_1_left.webp');
+    position: absolute;
+    left:0;
+    top: -400px;
+    transform: scale(80%);
+    transform-origin: left top;
+}
+#visiting-environment .img:before{
+    content:'';
+    width: 747px;
+    height:550px;
+    background-color: #f2eeeb;
+    position: absolute;
+    right: 0;
+}
+#visiting-environment .img:after{
+    content:url('/assets/images/invisalign/img_1.webp');
+    z-index:2;
+    transform: scale(90%);
+    transform-origin: left center;
+}
+.env_text{
+    padding:  0 40px 0 230px;
+}
+.env_1_teeth{
+    transform: scale(80%);
+    margin: 70px 0 0 100px;
+}
+
+
+/* process */
+#process{
+    position: relative;
+    padding: 100px 0 ;
+    box-sizing: border-box;
+    
+}
+#process:after{
+    content:url('../assets/images/invisalign/img_3.webp');
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+#process .content_title{
+    position: relative;
+}
+#process .content_title:after{
+    position: absolute;
+    content:'';
+    right: 0;
+    border:1px solid black;
+    top: 0;
+}
+.process_1,.process_4,.process_6{
+    position: relative;
+}
+.process_1:after{
+    position: absolute;
+    content:url('../assets/images/common/icon_leaves_2.webp');
+    left: 200px;
+    bottom: -80px;
+    z-index:1;
+}
+.process_4:after{
+    position: absolute;
+    content:url('../assets/images/common/icon_leaves_4.webp');
+    left: 150px;
+    bottom: -80px;
+    transform: scale(80%);
+}
+.process_6:after{
+    content:url('../assets/images/common/icon_leaves_2.webp');
+    position: absolute;
+    bottom: -80px;
+    left: 150px;
+    transform: scale(70%);
+}
+
+
+/* compare */
+#compare{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 100px;
+    box-sizing: border-box;
+    position: relative;
+}
+#compare .titleArea{
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 40px;
+}
+#compare .titleArea p{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+#compare img{
+    width: 1170px;
+    margin: 0 auto;
+}
+#compare:after{
+    position: absolute;
+    content:url('../assets/images/common/icon_leaves_5.webp');
+    transform: scale(80%);
+    transform-origin: right;
+    right: 100px;
+    top: 100px;
+}
+
+#artifact{
+    background: url('../assets/images/invisalign/contact.webp') no-repeat;
+    background-size: cover;
+}
+
+
+@media screen and (max-width:768px) {
+    .xs\:flex-column {
+        flex-direction: column !important
+    }
+
+    .xs\:py-12 {
+        padding: 0 !important;
+    }
+
+    .w-10\/12 {
+        margin: 0 auto;
+    }
+
+    .w-10\/12 img {
+        margin-top: 20px;
+        height: 300px;
+    }
+
+    .xs\:h-full {
+        height: auto !important;
+    }
+    .md\:top-\[1rem\]{
+        margin-top: 1em;
+    }
+    #artifact{
+        background: none;
+        display: flex;
+        flex-direction:column;
+        position: relative;
+    }
+    #artifact .content a{
+        position: relative;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    #visiting-environment:before{
+        display: none;
+    }
+    
+    .env_1_teeth{
+        margin: 20px auto;
+    }
+    
+    .process_1:after,
+    .process_4:after,
+    #compare:after{
+        display: none;
+    }
+   
+    #compare{
+        padding: 50px 20px;
+        box-sizing: border-box;
+    }
+    #compare .xs img{
+        margin-bottom: 20px;
+    }
+   
+}
+
+@media screen and (min-width:769px) and (max-width:1440px){
+    #visiting-environment:before{
+        display: none;
+    }
+    .env_1_teeth{
+        margin: 0 auto;
+        transform: scale(60%);
+    }
+    #process:after{
+        transform: scale(50%);
+        transform-origin: right top;
+        top: 0;
+    }
+    .process_1:after{
+        transform: scale(50%);
+    }
+    .process_4:after{
+        display: none;
+    }
+    .process_6:after{
+        transform: scale(50%);
+        bottom: -100px;
+    }
+    #advanage ul{
+        flex-wrap:wrap;
+        margin-top: 30px;
+    }
+    #advanage ul li{
+        width: 48%;
+        margin: 1%;
+    }
+    #compare{
+        padding: 50px;
+    }
+    #compare:after{
+        top: 0;
+        right: 50px;
+    }
+    #artifact{
+        height: 500px;
+        background-position: 40% center;
+    }
+    #artifact .content{
+        width: 33%;
+        right: 50px;
+    }
+}

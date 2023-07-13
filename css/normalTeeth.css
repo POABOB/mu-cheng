@@ -1,0 +1,145 @@
+#banner .content_style{
+    font-size: 18px!important;
+}
+#banner .text{
+    border-bottom:none;
+    margin-bottom: 0;
+}
+.titleArea{
+    width: 100%;
+}
+.boxArea .boxArea_text .other_font{
+    font-family: 'NotoSans-Bold';
+}
+.env_1_teeth{
+    transform: scale(90%);
+    float:right;
+    margin-top: 20px;
+}
+.boxArea.process_1 .boxArea_text,
+.process_1,
+.process_2 .boxArea_text{
+    position: relative;
+}
+.boxArea.process_1 .boxArea_text:after{
+    position: absolute;
+    content:url('../assets/images/common/icon_leaves_5.webp');
+    right: 0;
+    top: 20%;
+    transform: rotate(-10deg);
+}
+.process_1:after{
+    position: absolute;
+    content:url('../assets/images/common/icon_leaves_2.webp');
+    bottom: -90px;
+    left: 170px;
+}
+.process_2 .boxArea_text:after{
+    position: absolute;
+    content:url('../assets/images/normal-teeth/icon_teeth_2.webp');
+    top: 50px;
+    right: 0;
+    transform: scale(80%);
+}
+.process_3 .boxArea_text img{
+    margin: 20px 0 0 150px;
+    transform: scale(80%);
+}
+#prevent{
+    background: linear-gradient(to bottom, #f2ece7,white);
+    padding: 50px 0 150px ;
+    position: relative;
+    margin-top: 10px;
+}
+#prevent:after{
+    position: absolute;
+    content:url('../assets/images/common/icon_leaves_4.webp');
+    left: 50px;
+    bottom: 50px;
+}
+
+#prevent ul{
+    margin: 50px 200px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+#prevent ul li{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: inherit;
+    justify-content: center;
+}
+#prevent ul li p{
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+#prevent .process_title{
+    margin:10px auto 20px;
+    text-align: center;
+}
+#prevent .process_content{
+    text-align: center;
+}
+
+@media screen and (max-width:768px){
+    #banner .xs{
+        display: flex;
+        justify-content: center;
+    }
+    #banner .img .title{
+        transform: scale(50%);
+    }
+    .boxArea.process_1 .boxArea_text:after,
+    .process_2 .boxArea_text:after,
+    .process_1:after,
+    #prevent:after{
+        display: none;
+    }
+    #prevent{
+        padding-bottom: 0;
+    }
+    
+    #prevent ul{
+        padding: 50px 20px;
+        margin: 0;
+        flex-direction: column;
+    }
+    #prevent ul li{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #treatment .titleArea,
+    #prevent .titleArea{
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1440px){
+    .boxArea.process_1 .boxArea_text:after,
+    .process_1:after,
+    #prevent:after{
+        display: none;
+    }
+    .env_1_teeth,
+    .process_2 .boxArea_text:after{
+        transform: scale(70%);
+    }
+    .boxArea{
+        padding-bottom: 50px;
+        margin-bottom: 10px;
+    }
+    #prevent{
+        padding: 50px 0 50px;
+    }
+    #prevent ul{
+        margin:50px ;
+    }
+    #prevent ul li{
+        width: 45%;
+    }
+    
+}

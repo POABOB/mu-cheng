@@ -1,0 +1,177 @@
+.boxArea:nth-child(even) {
+    background: linear-gradient(to bottom,#f2ece7, white);
+    box-sizing: border-box;
+}
+.boxArea:nth-child(2n+1){
+    margin-top: 50px;
+}
+.ve_2 .boxArea_text img{
+    margin:50px 0 0 100px;
+    display: block;
+}
+.ve_2,
+.treatmentUl,
+.advanageUl{
+    position: relative;
+}
+
+.ve_2:after{
+    position: absolute;
+    content:url('../assets/images/common/icon_leaves_5.webp');
+    bottom: 130px;
+    right: 50px;
+}
+.treatmentUl{
+    padding: 0 165px;
+}
+.treatmentUl:before{
+    position: absolute;
+    content:url('../assets/images/common/icon_leaves_4.webp');
+    left: -70px;
+    top: 230px;
+    transform: scale(80%);
+    transform-origin: bottom left ;
+
+}
+.treatmentUl:after{
+    position: absolute;
+    content:url('../assets/images/common/icon_leaves_1_left.webp');
+    transform: rotateY(180deg);
+    right: -130px;
+    bottom: 0px;
+}
+#advanage .titleArea{
+    width: 100%;
+    padding: 0 ;
+}
+#advanage .advanage_2{
+    padding-top: 150px;
+}
+#advanage{
+    background: linear-gradient(to bottom, #e9eef1 , #f7f4f1);
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+#advanage ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+}
+#advanage ul li{
+    width: 25%;
+    margin-bottom: 30px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+#artifact{
+    background: url('../assets/images/micro-cure/contact.webp') no-repeat;
+    background-size: cover;
+}
+#artifact ul{
+    list-style: disc;
+    list-style-position: inside;
+}
+#artifact ul li{
+    font-size: 18px;
+    color: #6e5c4a;
+    line-height: 2;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.advanageUl{
+    padding: 0 508px;
+}
+#advanage .advanageUl li{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.advanageUl:before{
+    position: absolute;
+    content:url('../assets/images/common/icon_leaves_2.webp');
+    left: 0;
+    bottom: 50px;
+}
+.advanageUl:after{
+    position: absolute;
+    content:url('../assets/images/micro-cure/img_3.webp');
+    right: 0;
+    bottom: 0;
+    transform: scale(90%);
+    transform-origin: bottom right;
+}
+@media screen and (max-width:768px){
+    .xs\:pb-0{
+        padding-bottom: 0!important;
+    }
+    .xs\:mt-0{
+        margin-top: 0!important;
+    }
+    .ve_2 .boxArea_text img{
+        margin: 20px auto;
+        transform: scale(80%);
+    }
+    .ve_2:after,
+    .treatmentUl:before,
+    .advanageUl:after,
+    .advanageUl:before,
+    .treatmentUl:after{
+        display: none;
+    }
+    #advanage ul{
+        padding: 0;
+        flex-direction:column;
+    }
+
+    #advanage ul li,
+    #advanage .advanageUl li{
+        width: 60%;
+        margin: 0 auto 20px;
+    }
+    .boxArea:nth-child(2n+1){
+        margin-top: 0;
+    }
+    #artifact{
+        background: none;
+        position: relative;
+        display: flex;
+        flex-direction:column;
+        padding: 50px 0 0;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1440px){
+    #advanage ul{
+        justify-content: flex-start;
+    }
+    #advanage ul.advanageUl{
+        justify-content: center;
+    }
+    #advanage ul li .title{
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #advanage ul li{
+        width: 30%;
+    }
+    #advanage ul li hr{
+        margin: 20px auto ;
+    }
+    .advanageUl:after{
+        display: none;
+    }
+    #artifact .content{
+        right: 50px;
+    }
+    #artifact ul{
+        list-style:outside;
+        margin-left: 20px;
+    }
+}
