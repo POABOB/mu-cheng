@@ -626,3 +626,7 @@ footer .hint{
         height: 500px;
     }
 }
+
+#last_li {
+    margin-bottom: 78px;
+}
