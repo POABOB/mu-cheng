@@ -78,10 +78,10 @@
                         </svg></button></div>
             </div>
             <nav aria-label="Main navigation"
-                class="w-full lg:flex dark:text-slate-200 h-[calc(100vh-72px)] items-center lg:h-auto lg:overflow-visible lg:w-auto overflow-y-auto text-default">
+                class="w-full lg:flex dark:text-slate-200 h-[calc(100vh-72px)] items-center lg:h-auto lg:overflow-visible lg:w-auto overflow-y-auto text-default hidden">
                 <ul class="w-full flex flex-col lg:flex-row lg:pt-0 lg:self-center lg:text-base lg:w-auto pt-8 text-xl">
                     <li class=dropdown>
-                        <a
+                        <a onclick="navClick()"
                             class="flex items-center px-4 dark:hover:text-white duration-150 ease-in-out font-semibold hover:text-green py-3 transition"
                             href=/>首頁 
                             <svg class="hidden h-3.5 lg:inline ml-0.5 w-3.5" viewBox="0 0 24 24"
@@ -93,21 +93,21 @@
                         <ul
                             class="justify-center font-semibold dark:md:bg-slate-800 drop-shadow-xl dropdown-menu lg:absolute lg:bg-white lg:hidden lg:min-w-[100px] lg:pl-0 pl-6 rounded">
                             <li>
-                                <a class="block dark:hover:bg-gray-700 first:rounded-t hover:text-green last:rounded-b lg:text-center md:hover:bg-gray-100 px-2 py-5 whitespace-no-wrap"
+                                <a onclick="navClick()" class="block dark:hover:bg-gray-700 first:rounded-t hover:text-green last:rounded-b lg:text-center md:hover:bg-gray-100 px-2 py-5 whitespace-no-wrap"
                                     href=/#our-team>醫師介紹</a>
                             </li>
                             <li>
-                                <a class="block dark:hover:bg-gray-700 first:rounded-t hover:text-green last:rounded-b lg:text-center md:hover:bg-gray-100 px-2 py-5 whitespace-no-wrap"
+                                <a onclick="navClick()" class="block dark:hover:bg-gray-700 first:rounded-t hover:text-green last:rounded-b lg:text-center md:hover:bg-gray-100 px-2 py-5 whitespace-no-wrap"
                                     href=/#visiting-environment>診所環境</a>
                             </li>
                             <li>
-                                <a class="block dark:hover:bg-gray-700 first:rounded-t hover:text-green last:rounded-b lg:text-center md:hover:bg-gray-100 px-2 py-5 whitespace-no-wrap"
+                                <a onclick="navClick()" class="block dark:hover:bg-gray-700 first:rounded-t hover:text-green last:rounded-b lg:text-center md:hover:bg-gray-100 px-2 py-5 whitespace-no-wrap"
                                     href=/#machine_info>診所設備</a>
                             </li>
                         </ul>
                     </li>
                     <li class=dropdown>
-                        <a class="flex items-center px-4 dark:hover:text-white duration-150 ease-in-out font-semibold hover:text-green py-3 transition"
+                        <a onclick="navClick()" class="flex items-center px-4 dark:hover:text-white duration-150 ease-in-out font-semibold hover:text-green py-3 transition"
                             href=/invisalign>微笑曲線 
                             <svg class="hidden h-3.5 lg:inline ml-0.5 w-3.5" viewBox="0 0 24 24"
                                 astro-icon=tabler:chevron-down>
@@ -118,21 +118,21 @@
                         <ul
                             class="justify-center font-semibold dark:md:bg-slate-800 drop-shadow-xl dropdown-menu lg:absolute lg:bg-white lg:hidden lg:min-w-[100px] lg:pl-0 pl-6 rounded">
                             <li>
-                                <a class="block dark:hover:bg-gray-700 first:rounded-t hover:text-green last:rounded-b lg:text-center md:hover:bg-gray-100 px-2 py-5 whitespace-no-wrap"
+                                <a onclick="navClick()" class="block dark:hover:bg-gray-700 first:rounded-t hover:text-green last:rounded-b lg:text-center md:hover:bg-gray-100 px-2 py-5 whitespace-no-wrap"
                                     href=/invisalign>隱適美矯正</a>
                             </li>
                             <li>
-                                <a class="block dark:hover:bg-gray-700 first:rounded-t hover:text-green last:rounded-b lg:text-center md:hover:bg-gray-100 px-2 py-5 whitespace-no-wrap"
+                                <a onclick="navClick()" class="block dark:hover:bg-gray-700 first:rounded-t hover:text-green last:rounded-b lg:text-center md:hover:bg-gray-100 px-2 py-5 whitespace-no-wrap"
                                     href=/self-brace>自鎖式矯正</a>
                             </li>
                             <li>
-                                <a class="block dark:hover:bg-gray-700 first:rounded-t hover:text-green last:rounded-b lg:text-center md:hover:bg-gray-100 px-2 py-5 whitespace-no-wrap"
+                                <a onclick="navClick()" class="block dark:hover:bg-gray-700 first:rounded-t hover:text-green last:rounded-b lg:text-center md:hover:bg-gray-100 px-2 py-5 whitespace-no-wrap"
                                     href=/normal-brace>一般矯正</a>
                             </li>
                         </ul>
                     </li>
                     <li class=dropdown>
-                        <a
+                        <a onclick="navClick()"
                             class="flex items-center px-4 dark:hover:text-white duration-150 ease-in-out font-semibold hover:text-green py-3 transition"
                             href=/teeth-beauty>牙齒美白 <svg class="hidden h-3.5 lg:inline ml-0.5 w-3.5" viewBox="0 0 24 24"
                                 astro-icon=tabler:chevron-down>
@@ -143,32 +143,32 @@
                         <ul
                             class="justify-center font-semibold dark:md:bg-slate-800 drop-shadow-xl dropdown-menu lg:absolute lg:bg-white lg:hidden lg:min-w-[100px] lg:pl-0 pl-6 rounded">
                             <li>
-                                <a class="block dark:hover:bg-gray-700 first:rounded-t hover:text-green last:rounded-b lg:text-center md:hover:bg-gray-100 px-2 py-5 whitespace-no-wrap"
+                                <a onclick="navClick()" class="block dark:hover:bg-gray-700 first:rounded-t hover:text-green last:rounded-b lg:text-center md:hover:bg-gray-100 px-2 py-5 whitespace-no-wrap"
                                     href=/teeth-beauty#cold>冷光美白</a>
                             </li>
                             <li>
-                                <a class="block dark:hover:bg-gray-700 first:rounded-t hover:text-green last:rounded-b lg:text-center md:hover:bg-gray-100 px-2 py-5 whitespace-no-wrap"
+                                <a onclick="navClick()" class="block dark:hover:bg-gray-700 first:rounded-t hover:text-green last:rounded-b lg:text-center md:hover:bg-gray-100 px-2 py-5 whitespace-no-wrap"
                                     href=/teeth-beauty#housing>居家美白</a>
                             </li>
                         </ul>
                     </li>
                     <li class="">
-                        <a
+                        <a onclick="navClick()"
                             class="flex items-center px-4 dark:hover:text-white duration-150 ease-in-out font-semibold hover:text-green py-3 transition"
                             href=/micro-cure>顯微輔助治療</a>
                     </li>
                     <li class="">
-                        <a
+                        <a onclick="navClick()"
                             class="flex items-center px-4 dark:hover:text-white duration-150 ease-in-out font-semibold hover:text-green py-3 transition"
                             href=/artifact-teeth>人工植牙</a>
                     </li>
                     <li class="">
-                        <a
+                        <a onclick="navClick()"
                             class="flex items-center px-4 dark:hover:text-white duration-150 ease-in-out font-semibold hover:text-green py-3 transition"
                             href=/normal-teeth>一般牙科</a>
                     </li>
                     <li class="" id="last_li">
-                        <a
+                        <a onclick="navClick()"
                             class="flex items-center px-4 dark:hover:text-white duration-150 ease-in-out font-semibold hover:text-green py-3 transition hover:opacity-75 hover:text-green-light text-green"
                             href="/article.html">衛教專欄</a>
                     </li>
@@ -797,7 +797,11 @@
     </footer>
     <script>!function () { const e = "light:only"; function t(e) { "dark" === e ? document.documentElement.classList.add("dark") : document.documentElement.classList.remove("dark") } function o() { var e = document.documentElement.scrollTop || document.body.scrollTop; e > 0 && (window.requestAnimationFrame(o), window.scrollTo(0, e - e / 5)) } function c(e, t, o) { const c = "string" == typeof e ? document.querySelectorAll(e) : e; c && c.length && c.forEach((e => { e.addEventListener(t, (t => o(t, e)), !1) })) } e && e.endsWith(":only") || !localStorage.theme ? t(e.replace(":only", "")) : "dark" === localStorage.theme || !("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches ? t("dark") : t("light"), window.onload = function () { let t = window.scrollY, n = !0; function a() { const e = document.getElementById("header"); t > 60 && !e.classList.contains("scroll") ? (document.getElementById("header").classList.add("scroll"), document.getElementById("stick-item").classList.remove("hidden")) : t <= 60 && e.classList.contains("scroll") && (document.getElementById("header").classList.remove("scroll"), document.getElementById("stick-item").classList.add("hidden")), n = !1 } c("[data-aw-toggle-menu]", "click", (function (e, t) { t.classList.toggle("expanded"), document.body.classList.toggle("overflow-hidden"), document.getElementById("header")?.classList.toggle("h-screen"), document.querySelector("#header nav")?.classList.toggle("hidden") })), c("[data-aw-toggle-go-top]", "click", (function () { o() })), c("[data-aw-toggle-color-scheme]", "click", (function () { e.endsWith(":only") || (document.documentElement.classList.toggle("dark"), localStorage.theme = document.documentElement.classList.contains("dark") ? "dark" : "light") })), c("[data-carousel-prev-custom]", "click", (function () { const e = document.querySelectorAll("button[data-carousel-slide-to-custom]"), t = parseInt(document.querySelector('input[name="slider"]:checked').value); let o; o = (t - 1) % 5 < 0 ? 4 : (t - 1) % 5, document.getElementsByName("slider")[o].checked = !0, console.log(o), e[t].setAttribute("aria-current", !1), e[o].setAttribute("aria-current", !0) })), c("[data-carousel-next-custom]", "click", (function () { const e = document.querySelectorAll("button[data-carousel-slide-to-custom]"), t = parseInt(document.querySelector('input[name="slider"]:checked').value); var o = document.getElementsByName("slider"); let c; c = t + 1 > 4 ? 0 : t + 1, console.log(c), o[c].checked = !0, e[t].setAttribute("aria-current", !1), e[c].setAttribute("aria-current", !0) })), c("[data-aw-social-share]", "click", (function (e, t) { const o = t.getAttribute("data-aw-social-share"), c = encodeURIComponent(t.getAttribute("data-aw-url")), n = encodeURIComponent(t.getAttribute("data-aw-text")); let a; switch (o) { case "facebook": a = `https://www.facebook.com/sharer.php?u=${c}`; break; case "twitter": a = `https://twitter.com/intent/tweet?url=${c}&text=${n}`; break; case "linkedin": a = `https://www.linkedin.com/shareArticle?mini=true&url=${c}&title=${n}`; break; case "whatsapp": a = `https://wa.me/?text=${n}%20${c}`; break; case "mail": a = `mailto:?subject=%22${n}%22&body=${n}%20${c}`; break; default: return }const s = document.createElement("a"); s.target = "_blank", s.href = a, s.click() })), a(), c([document], "scroll", (function () { t = window.scrollY, n || (window.requestAnimationFrame((() => { a() })), n = !0) })) }, window.onpageshow = function () { document.documentElement.classList.add("motion-safe:scroll-smooth"); const e = document.querySelector("[data-aw-toggle-menu]"); e && e.classList.remove("expanded"), document.body.classList.remove("overflow-hidden"), document.getElementById("header")?.classList.remove("h-screen"), document.querySelector("#header nav")?.classList.add("hidden"); const t = document.querySelectorAll(".js-show-on-scroll"), o = new IntersectionObserver((function (e) { e.forEach((e => { e.isIntersecting && e.target.classList.add("motion-safe:animate-upFadeIn") })) })); screen.width > "1080px" && t.forEach((function (e) { e.classList.add("opacity-0"), o.observe(e) })) } }()</script>
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-    
+    <script>
+        const navClick = () => {
+            document.querySelector("#header nav")?.classList.toggle("hidden")
+        }
+    </script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script>$('.machine_ITEM').slick({centerMode: true,centerPadding: '150px',slidesToShow: 1,responsive: [{ breakpoint: 1440, settings: { arrows: true, centerMode: true, centerPadding: '40px', slidesToShow: 1 } }, { breakpoint: 768, settings: { arrows: false, centerMode: true, centerPadding: '40px', slidesToShow: 3 } }, { breakpoint: 480, settings: { arrows: true, centerMode: true, centerPadding: '40px', slidesToShow: 1 } } ] });
