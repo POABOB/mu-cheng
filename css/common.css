@@ -561,11 +561,11 @@ footer .hint{
         justify-content: center;
     }
     #cold, #housing {
-        scroll-margin: 200px;
+        scroll-margin: 400px;
     }
 
     #our-team, #visiting-environment, #machine_info {
-        scroll-margin: 250px;
+        scroll-margin: 450px;
     }
 }
 
