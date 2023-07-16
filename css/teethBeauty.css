@@ -237,7 +237,7 @@
         width: 50%;
     }
     .reason_column{
-        padding: 50px;
+        padding: 100px 50px 0;
     }
     .reason_column .advanage >.title,
     .reason_column .advanage .boxArea_text .title{
