@@ -501,6 +501,12 @@ footer .hint{
     footer{
         font-family:'Noto Sans TC';
     }
+    #cold, #housing {
+        scroll-margin: 400px;
+    }
+    #our-team, #visiting-environment, #machine_info {
+        scroll-margin: 450px;
+    }
 }
 
 
@@ -559,13 +565,6 @@ footer .hint{
     #banner .xs{
         display: flex;
         justify-content: center;
-    }
-    #cold, #housing {
-        scroll-margin: 400px;
-    }
-
-    #our-team, #visiting-environment, #machine_info {
-        scroll-margin: 450px;
     }
 }
 
