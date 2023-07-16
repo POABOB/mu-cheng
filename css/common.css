@@ -502,10 +502,10 @@ footer .hint{
         font-family:'Noto Sans TC';
     }
     #cold, #housing {
-        scroll-margin: 200px;
+        scroll-margin: 300px;
     }
     #our-team, #visiting-environment, #machine_info {
-        scroll-margin: 550px;
+        scroll-margin: 600px;
     }
 }
 
