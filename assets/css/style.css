@@ -1,0 +1,892 @@
+
+.machine_from {
+    width: auto;
+    font-size: 14px !important;
+}
+
+/* 輪播 */
+.bannerItem{
+    right: 20%;
+    bottom: 50px;
+    left: auto!important;
+}
+
+.bg-white\/50{
+    background-color: rgba(255,255,255,0.3);
+}
+/* 關於木成 */
+#about{
+    height: 825px;
+    position: relative;
+    background: url("../assets/images/index/icon_leaves_gray_1.webp") no-repeat;
+    background-position: right 80%;
+}
+
+#about .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#about .img{
+    width: 200px;
+}
+#about .service_item p{
+    position: relative;
+    letter-spacing: 20px;
+}
+#about .info{
+    width: 40%;
+}
+#about .info div{
+    justify-content: space-between;
+}
+#about .about_p{
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+#about .service_item p:before{
+    position: absolute;
+    content:"";
+    left: 0px;
+    top: 0;
+    width: 1px;
+    height: 70%;
+    background: linear-gradient(to bottom ,black,gray,transparent);
+}
+#about:before{
+    position: absolute;
+    content:url('../assets/images/index/icon_about_arrow.webp');
+    left:0;
+    top:50%;
+    transform: translateY(-50%);
+}
+#about:after{
+    content:url("../assets/images/index/icon_leaves_green_1.webp");
+    position: absolute;
+    right:150px;
+    top: 180px;
+}
+#about .service_item{
+    width: 100%;
+    position: relative;
+    right: 100px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+#about .service_item p{
+    font-size: 21px!important;
+}
+/* 服務項目 */
+#serviceItem{
+    width: 100%;
+    background: url("../assets/images/index/bg_service.webp") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#serviceItem ul{
+    width: 80%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin:0 auto;
+    padding: 100px 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+#serviceItem ul li{
+    margin-bottom: 20px;
+}
+#serviceItem .img_1{
+    position: absolute;
+    top: -50px;
+    left: 150px;
+}
+#serviceItem .img_2{
+    position: absolute;
+    right: 150px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#serviceItem .img_3{
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+}
+/* 醫師介紹 */
+#our-team{
+    position: relative;
+    padding: 180px 0;
+}
+
+#our-team:before{
+    display: none;
+}
+#our-team:after{
+    position: absolute;
+    right: 0;
+    top: 10%;
+    content:url("../assets/images/index/icon_leaves_gray_2.webp");
+}
+#our-team .title{
+    position: relative;
+}
+#our-team .title  p:first-child,
+#visiting-environment .title p:first-child,
+#machine_info >.title p:first-child,
+#transportantion .title p:first-child,
+#about .content .title p:first-child{
+    /* font-weight: bold!important; */
+}
+#our-team .title .img_1{
+    position: absolute;
+    top: 0px;
+    left: -150px;
+}
+#our-team .img_2{
+    position: absolute;
+    right: 400px;
+    bottom: 100px;
+}
+#our-team .jobTitle{
+    font-size: 23px;
+    height: 30px;
+    font-family: 'A-OTF-MaruFoPro';
+}
+#our-team .doctor_name{
+    font-size: 23px;
+    font-family: 'A-OTF-MaruFoPro-Medium';
+}
+#our-team .doctor_name span,
+#our-team .doctor_exerpience{
+    font-size: 19px;
+}
+#our-team .doctor_exerpience{
+    font-family: 'A-OTF-MaruFoPro';
+    margin: 40px 0 30px;
+}
+#our-team .doctor_experience_item{
+    font-size: 14.5px;
+}
+#our-team .doctor_experience_item li{
+    line-height: 2;
+    font-family: 'NotoSans-Regular';
+}
+#our-team .doctor_img{
+    width: 300px;
+}
+#our-team .doctor_text{
+    width: 60%;
+    padding: 0 20px;
+}
+/* 環境 */
+.env_img_left{
+    width: 66%;
+}
+#visiting-environment>.env_1>div:nth-child(2){
+    padding-left: 50px;
+}
+.env_1{
+    position: relative;
+}
+.env_1:before{
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    content:'';
+    background-color: rgb(138 147 113/var(--tw-bg-opacity));
+    z-index:5;
+}
+.env_1:after{
+    position: absolute;
+    content:url('../assets/images/index/icon_environment_arrow.webp');
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+.env_1 .img_1{
+    position: absolute;
+    right: 150px;
+    top: 150px;
+    transform: scale(80%);
+    transform-origin: top;
+}
+.env_hint{
+    padding: 250px 0 ;
+    box-sizing: border-box;
+}
+.env_hint .text_manque{
+    font-size: 45px;
+    line-height: 1.3;
+}
+
+.evi_right{
+    padding-top: 58px;
+    position: relative;
+}
+
+.img_Leave_left{
+    margin:-30px 0 0 100px;
+} 
+
+.img_Leave_right{
+    position: absolute;
+    bottom: 120px;
+    left: 100px;
+    transform: scale(70%);
+    transform-origin: top;
+} 
+.text_eng{
+    --tw-text-opacity:1;
+    color:rgb(188 177 156/var(--tw-text-opacity))
+}
+
+/* 交通方式 */
+#transportantion{
+    position: relative;
+}
+#transportantion .title_chi,
+#transportantion .title_eng{
+    margin-left: 50px;
+}
+.arrow_left{
+    position: absolute;
+    left: 0;
+    top: 5%;
+}
+.icon_leave_10{
+    position: absolute;
+    top: 120px;
+    left: 400px;
+}
+#transportantion>div>div.w-1\/2{
+    margin-bottom: 50px;
+}
+
+
+/* 設備介紹 */
+.machine-default-bg{
+    background:linear-gradient(to right, #ede4db ,#f2eeea) ;
+    border-radius:
+    20px;
+}
+#dental-equipment label >div{
+    padding: 50px;
+    box-sizing:border-box;
+}
+
+.machine_name{
+    font-size: 35px;
+    font-family: 'A-OTF-MaruFoPro-Medium';
+}
+.machine_name p{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color:#6e5c4a;
+}
+.machine_info,
+.machine_info .text-sm{
+    line-height:1.5;
+}
+#machine_info{
+    position: relative;
+}
+#machine_info .title >img{
+    position: absolute;
+    top: 160px;
+    left: 35%;
+    transform: scale(80%);
+}
+.machine_title{
+    color:black;
+    font-size: 30px;
+    font-family: 'A-OTF-MaruFoPro-Medium';
+    margin-bottom: 27px;
+}
+.machine_text{
+    margin: 5px 0 20px;
+    font-size: 20px;
+    font-family: 'NotoSans-Bold';
+}
+.machine_title_bold{
+    font-family: 'NotoSans-Bold';
+}
+.machine_img{
+    height:100%;
+}
+#machine_info .hint {
+    font-size: 25px;
+    font-family: 'NotoSans-Regular';
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+}
+.machine_ul{
+    list-style: disc;
+    padding-left: 1rem;
+}
+.machine_ul li{
+    text-align: left;
+    font-size: 20px;
+    font-family: 'NotoSans-Regular';
+}
+
+#machine_info{
+    width: 100%;
+    padding: 200px 0;
+    box-sizing: border-box;
+}
+#machine_info >.title{
+    margin-bottom: 50px;
+}
+.machine_ITEM .machine_content{
+    width: 90%;
+    height: 520px;
+    background:linear-gradient(to right, #f2eeeb,#f2eeea) ;
+    border-radius:
+    20px;
+    display: flex;
+    padding: 50px ;
+    box-sizing: border-box;
+    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
+}
+.machine_ITEM:after{
+    content:url("../assets/images/index/doctor_3.webp");
+    position: absolute;
+    top: -85%;
+    right: 300px;
+    transform: scale(90%);
+    transform-origin: bottom;
+}
+.machine_ITEM  .slick-next:before{
+    content:url('../assets/images/index/icon_arrow_right.webp');
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.machine_ITEM  .slick-prev:before{
+    content:url('../assets/images/index/icon_arrow_left.webp');
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.machine_ITEM .machine_content .name{
+    width: 55%;
+    height: 100%;
+    float:left;
+    border-right:1px solid black;
+    position: relative;
+}
+.machine_ITEM .machine_content .name img{
+    height: 100%;
+    object-fit: contain;
+    float: left;
+}
+.machine_ITEM .machine_content .name p{
+    float:left;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color:rgb(138 117 78/var(--tw-text-opacity));
+}
+.machine_ITEM .machine_content .info{
+    width: 45%;
+    height: 100%;
+    float:left;
+    text-align: left;
+    padding: 0 10px 0 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+.machine_ITEM .machine_content .info .hint{
+    color: #889170;
+    font-size: 16px;
+}
+.machine_ITEM .machine_content .info .machine_text{
+    color:rgb(138 117 78/var(--tw-text-opacity));
+}
+.slick-prev,.slick-next{
+    width: 70px!important;
+    height: 70px!important;
+    z-index:999;
+}
+.slick-next{
+    right: 100px!important;
+}
+.slick-prev{
+    left: 100px!important;
+}
+.machine_1{
+    position: absolute;
+    left:-50px;
+    bottom: -50px;
+    transform: scale(120%);
+    transform-origin: bottom left;
+}
+.machine_2{
+    position: absolute;
+    top: -50px;
+    left: 50px;
+    transform: scale(120%);
+    transform-origin: top;
+}
+.machine_3{
+    position: absolute;
+    bottom:-50px;
+    left: 100px;
+    transform: scale(110%);
+    transform-origin: bottom;
+}
+.machine_4{}
+.machine_5{
+    position: absolute;
+    bottom:-50px;
+    transform: scale(110%);
+}
+
+@media screen and (max-width:768px){
+    
+    .bannerItem{
+        right: auto;
+        bottom: -30px!important;
+        left: 50%!important;
+        transform: translateY(-50%);
+    }
+    .bannerItem{
+        height: 50px!important;
+    }
+    
+    /* 關於木成 */
+    #about{
+        width: 80%;
+        height:auto;
+        min-height: 600px;
+        padding: 100px 0 ;
+        box-sizing: border-box;
+        background-size: 50%;
+    }
+    #about:before,
+    #about  .img,
+    #about::after{
+        display: none;
+    }
+    #about .title{
+        width: 100%;
+        text-align: center;
+    }
+    #about .service_item{
+        padding-right: 0;
+        right: 0;
+    }
+    #about .info{
+        width: 100%;
+    }
+    /* 服務項目 */
+    #serviceItem ul{
+        flex-direction:column;
+    }
+    #serviceItem ul li{
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+    /* 醫師介紹 */
+    #our-team{
+        padding: 50px 0;
+    }
+    #our-team .title{
+        text-align: center;
+    }
+    #our-team .title .img_1{
+        left: 0;
+        top: 0px;
+    }
+    #our-team .title .img_1 img{
+        width: 50%;
+    }
+    #our-team .doctor_img{
+        width: 100%;
+        background-color: #fff;
+    }
+    #our-team:after{
+        display: none;
+    }
+    #our-team .doctor_text{
+        width: 100%;
+        padding: 20px   0 ;
+    }
+    /* 環境介紹 */
+    .env_1 .img_1,
+    .env_1:after{
+        display: none;
+    }
+    
+    .img_Leave_left{
+        margin: 30px 0 0 50px;
+    }
+    .img_Leave_right{
+        transform: scale(50%);
+        left: 100px;
+        bottom: -50px;
+        display: none;
+    }
+    .img_Leave_right_xs{
+        position: absolute;
+        transform: scale(60%);
+        left: 150px;
+        z-index:5;
+    }
+    .env_hint .text_manque{
+        font-size: 30px;
+    }
+    .env_hint{
+        padding: 200px 0 150px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .env_hint img{
+        width: 30px;
+    }
+
+    /* 設備介紹 */
+    #machine_info{
+        padding: 100px 0 0;
+    }
+    .machine_ITEM:after{
+        display: none;
+    }
+    #machine_info .title >img{
+        display: none;
+    }
+    .machine_ITEM .machine_content{
+        height:auto;
+        padding: 20px;
+    }
+    .machine_ITEM .machine_content .name{
+        width: 100%;
+        height:300px;
+        float:none;
+        border-right:none;
+        border-bottom:1px solid black;
+    }
+    .machine_ITEM .machine_content .name p{
+        width:auto;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        /* background-color: #fff; */
+    }
+    .machine_name{
+        font-size: 20px;
+    }
+    .machine_text{
+        font-size: 16px;
+    }
+    #machine_info .hint{
+        font-size: 16px;
+        left: 0;
+        position: relative;
+    }
+    .slick-next{
+        right: 50px!important;
+    }
+    .slick-prev{
+        left: 50px!important;
+    }
+    .machine_1{
+        transform: scale(90%);
+        bottom: -3px;
+        left: -20px;
+        transform-origin: bottom left;
+    }
+    .machine_2{
+        transform: scale(90%);
+        top: 10px;
+        left: -20px;
+        transform-origin: center;
+    }
+    .machine_3{
+        transform: scale(100%);
+        bottom: 0px;
+        left:auto;
+        right:auto;
+    }
+    .machine_5{
+        transform: scale(85%);
+        transform-origin: bottom;
+        bottom: 0px;
+    }
+
+    .machine_ITEM .slick-track{
+        display: flex;
+        align-items: stretch;
+    }
+    .machine_ITEM .machine_content .info{
+        width:100%;
+        height: calc( 100% - 300px);
+        float:none;
+        padding: 20px 0;
+    }
+    .machine_title{
+        font-size: 18px;
+    }
+    .machine_ITEM .machine_content .name img{
+        width: 100%;
+    }
+    .machine_ul li{
+        font-size: 16px;
+    }
+    /* 交通方式 */
+    #transportantion .title{
+        width: 100%;
+        text-align: center;
+    }
+    #transportantion .title_chi,
+    #transportantion .title_eng{
+        margin-left: 0;
+    }
+
+    .arrow_left{
+        display: none;
+    }
+
+    .icon_leave_10{
+        left: auto;
+        right: 0;
+        top: 0;
+        transform: scale(70%);
+    }
+    /* 服務項目 */
+    #serviceItem ul li .title{
+        font-size: 20px;
+    }
+    #serviceItem ul li .content{
+        font-size: 12px;
+    }
+    #serviceItem ul li .img img{
+        width: 80%;
+        height: 50px;
+    }
+    #serviceItem ul li:nth-child(4) .img img{
+        width: 60%;
+        height:auto;
+    }
+    #serviceItem ul li:nth-child(5) .img img{
+        height: 60px;
+    }
+    #serviceItem .img_1 img{
+        transform: scale(50%);
+    }
+    #serviceItem .img_2{
+        left: 50px;
+    }
+    #serviceItem .img_2 img{
+        transform: scale(70%);
+    }
+    #serviceItem .img_3{
+        left: 20px;
+    }
+    #serviceItem .img_3 img{
+        transform: scale(50%);
+        
+    }
+    .slick-next , .slick-prev{
+        width: 50px!important;
+        height: 50px!important;
+    }
+    .machine_ITEM .slick-prev:before{
+        left: -70%;
+        transform: translateY(-50%) scale(50%);
+        transform-origin: left;
+    }
+    .machine_ITEM .slick-next:before{
+        right: -70%;
+        transform: translateY(-50%) scale(50%);
+        transform-origin: right;
+    }
+   
+    #our-team .doctor_exerpience{
+        margin: 10px 0 ;
+    }
+    
+    #our-team .img_2{
+        display: none;
+    }
+    .env_img_left{
+        width: 100%;
+    }
+    #visiting-environment>.env_1>div:nth-child(2){
+        padding-left: 0;
+    }
+    .evi_right{
+        width: 100%;
+    }
+    .md\:w-4\/7{
+        width: 100%;
+    }
+}
+@media screen and (min-width:426px) and (max-width:768px){
+    
+    /* 關於木成 */
+    #about{
+        background-size: 30%;
+    }
+    #about  .img{
+        position: absolute;
+        left: 0px;
+        transform: scale(70%);
+        top: -170px;
+    }
+    #about::after{
+        right: 50px;
+        transform: scale(50%);
+    }
+    /* 服務項目 */
+    #serviceItem ul{
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+    #serviceItem ul li{
+        width: 48%;
+        margin: 1%;
+    }
+    #serviceItem ul li:nth-child(4) .img img{
+        width: 70%;
+        height:auto;
+    }
+    #serviceItem ul li:nth-child(5) .img img{
+        height: 60px;
+    }
+    #serviceItem ul li .title{
+        font-size: 20px;
+    }
+    #serviceItem ul li .content{
+        font-size: 16px;
+    }
+    #serviceItem .img_2{
+        right: 50px;
+    }
+    #serviceItem .img_3{
+        left: 25px;
+    }
+    /* 醫師介紹 */
+    .doctorInfo{
+        flex-direction:column;
+        display: flex!important;
+    }
+    #our-team .doctor_text{
+        padding-left: 20px;
+    }
+    .machine_1{
+        bottom: 0;
+    }
+   
+   
+}
+@media screen and (min-width:769px) and (max-width:1440px){
+    
+    /* 關於木成 */
+    #about:after{
+        right: 30%;
+        top: 120px;
+    }   
+    #about .service_item{
+        right: 0;
+    }
+    #about:before{
+        display: none;
+    }
+    /* 服務項目 */
+    #serviceItem ul{
+        width: 90%;
+    }
+    #serviceItem ul li .title{
+        font-size: 20px;
+    }
+    #serviceItem .img_2{
+        right: 50px;
+    }
+    #serviceItem .img_3{
+        left: 10px;
+    }
+    #serviceItem ul li .img{
+        height: 30%;
+    }
+    #serviceItem ul li .img img{
+        width: 80%;
+        height: 70px!important;
+    }
+    #serviceItem ul li .content{
+        font-size: 16px;
+    }
+    .doctorInfo{
+        flex-direction:column;
+        display: flex!important;
+    }
+    /* 環境 */
+    .env_1 .img_1{
+        transform: scale(50%);
+        top: 200px;
+    }
+    /* 設備介紹 */
+    .machine_ITEM:after{
+        transform: scale(50%);
+        right: 100px;
+        top: -350px;
+    }
+    .machine_ITEM .machine_content .name p{
+        position: absolute;
+        top: -30px;
+        left: 0px;
+        text-align:left;
+        color:#889170;
+    }
+    .img_Leave_right_xs{
+        display: none;
+    }
+    /* 設備介紹 */
+    #machine_info{
+        padding: 100px 0;
+    }
+    #machine_info .title >img{
+        left: 30%;
+        top: 50px;
+    }
+    .machine_ITEM:after{
+        transform-origin: bottom;
+        top: -450px;
+    }
+    .machine_title{
+        font-size: 25px;
+    }
+    #machine_info .hint{
+        font-size: 16px;
+    }
+    .slick-next{
+        right: 25px!important;
+    }
+    .slick-prev{
+        left: 25px!important;
+    }
+    .machine_name{
+        font-size: 25px;
+    }   
+    .icon_leave_10{
+        top: 100px;
+    }
+    .arrow_left{
+        display: none;
+    }
+    
+}

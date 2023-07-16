@@ -1,0 +1,241 @@
+.hintStyle{
+    color: #9c6f41;
+    font-size: 18px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.env_1_teeth{
+    transform: scale(80%);
+    margin: 50px 0 0 100px;
+}
+#process{
+    margin: 100px 0 10px 0;
+}
+#process .titleArea{
+    width: 100%;
+    text-align: left;
+    padding-left: 230px;
+    display: flex;
+    flex-direction: row;
+}
+.process_1 .boxArea_text,
+.process_1,
+.process_2,
+.process_3,
+.process_4,
+.process_5{
+    position: relative;
+}
+.process_1 .boxArea_text:after{
+    position: absolute;
+    content:url('../assets/images/self-brace/icon_leave_1.webp');
+    right: 30px;
+    transform: scale(75%);
+    top: 21%;
+}
+.process_1:after{
+    position: absolute;
+    content:url('../assets/images/self-brace/icon_leave_2.webp');
+    transform: scale(80%);
+    bottom: -70px;
+    left: 210px;
+}
+.process_2:after{
+    position: absolute;
+    content:url('../assets/images/self-brace/icon_leave_3.webp');
+    left: 0;
+    top: 40%;
+}
+.process_3:after{
+    position: absolute;
+    content:url('../assets/images/self-brace/icon_leave_4.webp');
+    right: 0;
+    transform: scale(90%);
+    transform-origin: right bottom;
+}
+.process_4:after{
+    position: absolute;
+    content:url('../assets/images/self-brace/icon_leave_5.webp');
+    bottom: -100px;
+    left: 120px;
+    transform: scale(80%);
+    transform-origin: left bottom;
+}
+.process_5:after{
+    position: absolute;
+    content:url('../assets/images/self-brace/icon_leave_6.webp');
+    transform: scale(80%);
+    bottom: 30px;
+}
+.process_6:after{
+    position: absolute;
+    content:url('../assets/images/self-brace/icon_leave_7.webp');
+    transform: scale(80%);
+    bottom: -80px;
+    left: 150px;
+}
+#artifact{
+    background: url('../assets/images/self-brace/contact.webp') no-repeat;
+    background-size: cover;
+}
+/* advanage */
+#advanage{
+    padding: 60px 120px 230px;
+    position: relative;
+}
+#advanage .titleArea{
+    width: 100%;
+    text-align: left;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#advanage .star{
+    margin-bottom: 50px;
+}
+
+#advanage:after{
+    position: absolute;
+    content:url('../assets/images/common/icon_leaves_5.webp');
+    right: 15%;
+    bottom: 80px;
+}
+@media screen and (max-width:768px) {
+    .xs\:flex-column {
+        flex-direction: column !important
+    }
+
+    .xs\:py-12 {
+        padding: 0 !important;
+    }
+
+    .w-10\/12 {
+        margin: 0 auto;
+    }
+
+    .w-10\/12 img {
+        margin-top: 20px;
+        height: 300px;
+    }
+
+    .xs\:h-full {
+        height: auto!important;
+        padding-top:0;
+        padding-bottom: 0!important;
+    }
+    .env_1_teeth{
+        margin: 20px auto; 
+    }
+    
+    #process .titleArea{
+        padding: 0 20px;
+        flex-direction:column;
+    }
+    
+    .process_1 .boxArea_text:after,
+    .process_1:after,
+    .process_2:after,
+    .process_3:after,
+    .process_4:after,
+    .process_5:after,
+    .process_6:after,
+    .env_1_teeth{
+        display: none;
+    }
+    #banner .img .title{
+        transform: scale(50%);
+    }
+    #advanage{
+        padding: 50px 20px;
+        box-sizing: border-box;
+    }
+    #advanage .titleArea{
+        padding-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #advanage .titleArea .star{
+        position: absolute;
+        transform: scale(50%);
+        transform-origin: bottom right;
+        right: 20px;
+        bottom: 5px;
+        margin-bottom: 0;
+    }
+    .titleArea{
+        position: relative;
+    }
+    #advanage:after{
+        bottom: 30px;
+    }
+    #artifact{
+        background: none;
+        position: relative;
+        display: flex;
+        flex-direction:column;
+        padding: 50px 0 0;
+        box-sizing: border-box;
+    }
+    .hintStyle{
+        font-size: 14.5px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1440px){
+    .env_1_teeth{
+        margin:20px auto;
+        transform: scale(70%);
+    }
+    #process .titleArea{
+        padding:0 50px;
+        flex-direction: column;
+    }
+    .process_1 .boxArea_text:after{
+        right: 0;
+        top: -250px;
+    }
+    .process_2:after,
+    .process_3:after,
+    .process_5:after{
+        display: none;
+    }
+    .process_1:after,
+    .process_4:after,
+    .process_6:after{
+        transform: scale(60%);
+    }
+    #advanage .titleArea{
+        padding-left: 0px;
+        flex-direction:column;
+        align-items: flex-start;
+    }
+    .titleArea{
+        position: relative;
+    }
+    .titleArea img.star{
+        transform: scale(30%);
+        transform-origin: right top;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #advanage ul{
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    #advanage ul li{
+        width: 31%;
+        margin:1%;
+    }
+    #artifact{
+        background-position: 40% center;
+    }
+    #artifact .content{
+        right: 50px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1440px){
+    .boxArea:nth-child(odd){
+        padding: 100px 50px;
+    }
+}
