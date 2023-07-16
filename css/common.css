@@ -560,6 +560,13 @@ footer .hint{
         display: flex;
         justify-content: center;
     }
+    #cold, #housing {
+        scroll-margin: 200px;
+    }
+
+    #our-team, #visiting-environment, #machine_info {
+        scroll-margin: 250px;
+    }
 }
 
 @media screen and (min-width:769px) and (max-width:1440px){
