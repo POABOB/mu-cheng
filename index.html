@@ -896,7 +896,7 @@
         $(document).ready(function () {
             const url = parseURLWithRegExp();
             if(url[11]) {
-                const anchor = $(str1.substr(url[11])).attr('href');
+                const anchor = $(url[11].substr(1)).attr('href');
                 const linkScroll = $(anchor).offset().top;
                 $('html,body').stop().animate({ 
                     scrollTop: linkScroll -43
