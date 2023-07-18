@@ -814,7 +814,7 @@
                 const id = parts.pop()
                 console.log(id);
                 $('html,body').stop().animate({ 
-                    scrollTop: $(id).offset().top - 43
+                    scrollTop: $(`#${id}`).offset().top - 43
                 },700)
             }
             $('nav').on('click','a', function (e) {
