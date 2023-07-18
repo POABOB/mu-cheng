@@ -471,7 +471,9 @@
             $('nav').on('click','a', function (e) {
                 // e.preventDefault();
                 const anchor = $(this).attr('href');
-                const linkScroll = $(anchor).offset().top;
+                const parts = anchor.split('#');
+                const id = parts.pop()
+                const linkScroll = $(`#${id}`).offset().top;
                 $('html,body').stop().animate({ 
                     scrollTop: linkScroll -43
                 },700)
