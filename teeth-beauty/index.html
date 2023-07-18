@@ -463,6 +463,7 @@
             var parts = window.location.href.split('#');
             if (parts.length > 1) {
                 const id = parts.pop()
+                console.log(id);
                 $('html,body').stop().animate({ 
                     scrollTop: $(id).offset().top - 43
                 },700)
