@@ -807,7 +807,7 @@
     </script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <!-- <script>
+    <script>
         $(document).ready(function () {
             var parts = window.location.href.split('#');
             if (parts.length > 1) {
@@ -817,18 +817,8 @@
                     scrollTop: $(`#${id}`).offset().top - 43
                 },700)
             }
-            $('nav').on('click','a', function (e) {
-                e.preventDefault();
-                const anchor = $(this).attr('href');
-                const parts = anchor.split('#');
-                const id = parts.pop()
-                const linkScroll = $(`#${id}`).offset().top;
-                $('html,body').stop().animate({ 
-                    scrollTop: linkScroll -43
-                },700)
-            });
-            });
-    </script> -->
+        });
+    </script>
     <script>$('.machine_ITEM').slick({centerMode: true,centerPadding: '150px',slidesToShow: 1,responsive: [{ breakpoint: 1440, settings: { arrows: true, centerMode: true, centerPadding: '40px', slidesToShow: 1 } }, { breakpoint: 768, settings: { arrows: false, centerMode: true, centerPadding: '40px', slidesToShow: 3 } }, { breakpoint: 480, settings: { arrows: true, centerMode: true, centerPadding: '40px', slidesToShow: 1 } } ] });
     </script>
 </body>
