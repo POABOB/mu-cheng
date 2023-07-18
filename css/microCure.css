@@ -22,7 +22,11 @@
     right: 50px;
 }
 .treatmentUl{
-    padding: 0 165px;
+    padding: 0 ;
+}
+.treatmentUl li img,
+.advanageUl li img{
+    width: 320px!important;
 }
 .treatmentUl:before{
     position: absolute;
@@ -44,6 +48,7 @@
     width: 100%;
     padding: 0 ;
 }
+
 #advanage .advanage_2{
     padding-top: 150px;
 }
@@ -73,7 +78,8 @@
 }
 #artifact ul{
     list-style: disc;
-    list-style-position: inside;
+    list-style-position: outside;
+    margin-left: 20px;
 }
 #artifact ul li{
     font-size: 18px;
@@ -81,11 +87,8 @@
     line-height: 2;
     font-family: 'Noto Sans TC', sans-serif;
 }
-.advanageUl{
-    padding: 0 508px;
-}
+
 #advanage .advanageUl li{
-    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,11 +146,14 @@
         padding: 50px 0 0;
         box-sizing: border-box;
     }
+    #artifact ul li{
+        font-size: 14.5px;
+    }
 }
 
 @media screen and (min-width:769px) and (max-width:1440px){
     #advanage ul{
-        justify-content: flex-start;
+        justify-content: space-between;
     }
     #advanage ul.advanageUl{
         justify-content: center;
@@ -173,5 +179,25 @@
     #artifact ul{
         list-style:outside;
         margin-left: 20px;
+    }
+    .treatmentUl{
+        padding: 0 50px;
+    }
+    .advanageUl:before{
+        right: 0;
+        top: -300px;
+    }
+    #artifact{
+        background-position: 50% center;
+    }
+    #artifact .content{
+        width: 48%;
+    }
+    .advanageUl{
+        padding: 0;
+    }
+    #advanage .advanageUl li{
+        width: 30%;
+        margin: 0 2%;
     }
 }

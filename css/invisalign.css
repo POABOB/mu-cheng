@@ -155,20 +155,20 @@
         left:50%;
         transform: translateX(-50%);
     }
-    #visiting-environment:before{
+    #visiting-environment:before,
+    .env_1_teeth,
+    .process_1:after,
+    .process_4:after,
+    #compare:after,
+    #process:after,
+    .process_6:after{
         display: none;
     }
     
     .env_1_teeth{
         margin: 20px auto;
     }
-    
-    .process_1:after,
-    .process_4:after,
-    #compare:after{
-        display: none;
-    }
-   
+       
     #compare{
         padding: 50px 20px;
         box-sizing: border-box;
@@ -176,10 +176,14 @@
     #compare .xs img{
         margin-bottom: 20px;
     }
-   
+    #process{
+        padding: 0px 0 50px ;     
+    }
 }
 
 @media screen and (min-width:769px) and (max-width:1440px){
+    
+
     #visiting-environment:before{
         display: none;
     }
@@ -190,8 +194,9 @@
     #process:after{
         transform: scale(50%);
         transform-origin: right top;
-        top: 0;
+        top: -30px;
     }
+    
     .process_1:after{
         transform: scale(50%);
     }
@@ -205,9 +210,10 @@
     #advanage ul{
         flex-wrap:wrap;
         margin-top: 30px;
+        justify-content: center;
     }
     #advanage ul li{
-        width: 48%;
+        width: 31%;
         margin: 1%;
     }
     #compare{

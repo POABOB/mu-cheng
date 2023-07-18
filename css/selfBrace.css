@@ -126,6 +126,7 @@
     .env_1_teeth{
         margin: 20px auto; 
     }
+    
     #process .titleArea{
         padding: 0 20px;
         flex-direction:column;
@@ -137,7 +138,8 @@
     .process_3:after,
     .process_4:after,
     .process_5:after,
-    .process_6:after{
+    .process_6:after,
+    .env_1_teeth{
         display: none;
     }
     #banner .img .title{
@@ -174,6 +176,9 @@
         padding: 50px 0 0;
         box-sizing: border-box;
     }
+    .hintStyle{
+        font-size: 14.5px;
+    }
 }
 
 @media screen and (min-width:769px) and (max-width:1440px){
@@ -202,6 +207,7 @@
     #advanage .titleArea{
         padding-left: 0px;
         flex-direction:column;
+        align-items: flex-start;
     }
     .titleArea{
         position: relative;
@@ -215,9 +221,10 @@
     }
     #advanage ul{
         flex-wrap:wrap;
+        justify-content: center;
     }
     #advanage ul li{
-        width: 48%;
+        width: 31%;
         margin:1%;
     }
     #artifact{

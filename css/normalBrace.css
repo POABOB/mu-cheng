@@ -116,7 +116,9 @@
     .process_3:after,
     .process_4:after,
     #advanage:after,
-    .process_5:after{
+    .process_5:after,
+    .process_6:after,
+    .orthotics{
         display: none;
     }
     #banner .img .title{
@@ -131,10 +133,14 @@
     #advanage ul li{
         margin: 0 auto 20px ;
     }
+    
+    #process{
+        margin: 30px 0 10px;
+    }
 }
 @media screen and (min-width:769px) and (max-width:1440px){
     .process_1 .boxArea_text:before{
-        top: -150px;
+        top: -300px;
     }
     .process_2:after,
     .process_3:after,
@@ -158,7 +164,7 @@
         justify-content: flex-start;
     }
     #advanage ul li{
-        width: 48%;
+        width: 31%;
         margin: 1%;
     }
 }

@@ -141,6 +141,9 @@
 }
 
 @media screen and (max-width:768px){
+    #banner .content_style{
+        font-size: 14.5px!important;
+    }
     #banner .xs{
         display: flex;
         justify-content: center;
@@ -162,7 +165,8 @@
     .advanage_1:before,
     .advanage_1:after,
     #advanage .advanageUl:before,
-    #advanage:after{
+    #advanage:after,
+    .env_1_teeth{
         display: none;
     }
     #advanage{
@@ -186,7 +190,7 @@
         margin: 0 auto 20px;
     }
     #choose{
-        padding: 100px 20px;
+        padding: 50px 20px ;
     }
     #choose .xs {
         flex-direction:column;
@@ -250,7 +254,8 @@
         top: 45%;
         bottom: 0px;
     }
-    #advanage .advanageUl:before{
+    #advanage .advanageUl:before,
+    #advanage:after{
         display: none;
     }
     #choose{
@@ -259,5 +264,8 @@
     #artifact .content{
         width: 45%;
         left: 50px;
+    }
+    #visiting-environment .boxArea .boxArea_text:before{
+        right: -10px;
     }
 }

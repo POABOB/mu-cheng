@@ -546,10 +546,22 @@
         left: 150px;
         z-index:5;
     }
+    .env_hint .text_manque{
+        font-size: 30px;
+    }
+    .env_hint{
+        padding: 200px 0 150px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .env_hint img{
+        width: 30px;
+    }
 
     /* 設備介紹 */
     #machine_info{
-        padding: 100px 0;
+        padding: 100px 0 0;
     }
     .machine_ITEM:after{
         display: none;
@@ -723,10 +735,6 @@
     .md\:w-4\/7{
         width: 100%;
     }
-    .env_hint .text_manque{
-        font-size: 30px;
-    }
-  
 }
 @media screen and (min-width:426px) and (max-width:768px){
     
@@ -783,6 +791,7 @@
     .machine_1{
         bottom: 0;
     }
+   
    
 }
 @media screen and (min-width:769px) and (max-width:1440px){

@@ -92,10 +92,15 @@
     #banner .img .title{
         transform: scale(50%);
     }
+    #banner .content_style{
+        font-size: 14.5px!important;
+    }
     .boxArea.process_1 .boxArea_text:after,
     .process_2 .boxArea_text:after,
     .process_1:after,
-    #prevent:after{
+    #prevent:after,
+    .env_1_teeth,
+    .process_3 .boxArea_text img{
         display: none;
     }
     #prevent{
@@ -141,5 +146,7 @@
     #prevent ul li{
         width: 45%;
     }
-    
+    .env_1_teeth, .process_2 .boxArea_text:after{
+        position: relative;
+    }
 }
