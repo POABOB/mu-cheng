@@ -465,19 +465,9 @@
                 const id = parts.pop()
                 console.log(id);
                 $('html,body').stop().animate({ 
-                    scrollTop: $(`#${id}`).offset().top
+                    scrollTop: $(`#${id}`).offset().top - 43
                 },700)
             }
-    //         $('nav').on('click','a', function (e) {
-    //             e.preventDefault();
-    //             const anchor = $(this).attr('href');
-    //             const parts = anchor.split('#');
-    //             const id = parts.pop()
-    //             const linkScroll = $(`#${id}`).offset().top;
-    //             $('html,body').stop().animate({ 
-    //                 scrollTop: linkScroll
-    //             },700)
-    //         });
             });
     </script>
 </body>
