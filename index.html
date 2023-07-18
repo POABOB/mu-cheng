@@ -906,7 +906,7 @@
                 // e.preventDefault();
                 console.log(this);
                 const anchor = $(this).attr('href');
-                const linkScroll = $(anchor).offset().top;
+                const linkScroll = $(anchor.substr(1)).offset().top;
                 $('html,body').stop().animate({ 
                     scrollTop: linkScroll -43
                 },700)
