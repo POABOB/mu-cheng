@@ -801,6 +801,9 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
+            $('html,body').stop().animate({ 
+                scrollTop: $("#machine_info").offset().top - 43
+            },700)
             $('nav').on('click','a', function (e) {
                 // e.preventDefault();
                 const anchor = $(this).attr('href');
